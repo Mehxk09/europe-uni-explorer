@@ -1,0 +1,312 @@
+{
+  "DE": {
+    "admissionRequirements": "Higher education entrance qualification (Abitur or recognised foreign equivalent). Most programmes require German B2–C1 OR English proof (IELTS ~6.0–6.5) for English-taught courses. Some restrict NC (numerus clausus) programmes. Apply via uni-assist or directly.",
+    "visaWorkRights": "Non-EU: student visa + blocked account (~€11,904/year, 2024 figure — verify current amount). EU/EEA: no visa. Work: up to 140 full or 280 half days/year; mini-jobs allowed with limits.",
+    "housingNotes": "Student dorms (Studierendenwerk): ~€250–400/month — apply early, long waiting lists in big cities. Private shared flat (WG): ~€400–700 in Berlin/Munich. DAAD accommodation guide linked below.",
+    "housingPortalUrl": "https://www.daad.de/en/study-and-research-in-germany/planning-your-studies/accommodation/",
+    "deadlines": [
+      { "intake": "Winter semester (Oct)", "deadline": "15 July", "note": "Many unis; some earlier for NC subjects" },
+      { "intake": "Summer semester (Apr)", "deadline": "15 January", "note": "Not all programmes offer summer intake" }
+    ]
+  },
+  "NO": {
+    "admissionRequirements": "Upper secondary equivalent to Norwegian vitnemål. English: IELTS 6.0+ or TOEFL 80+ typical for English programmes. Each university sets own requirements — check programme page.",
+    "visaWorkRights": "Non-EU: study permit via UDI. EU/EEA: register after 3 months. Work: up to 20 hours/week during term with permit; full-time in holidays.",
+    "housingNotes": "Student housing (SiO etc.): ~NOK 3,500–6,000/month. High demand in Oslo — apply months ahead. Private rent expensive in Oslo/Bergen.",
+    "housingPortalUrl": "https://www.studyinnorway.no/living-in-norway/housing",
+    "deadlines": [
+      { "intake": "Autumn (Aug)", "deadline": "1 December (prior year)", "note": "Many master's programmes" },
+      { "intake": "Spring (Jan)", "deadline": "1 August", "note": "Limited programmes" }
+    ]
+  },
+  "FI": {
+    "admissionRequirements": "Secondary diploma recognised in Finland. English programmes: IELTS 6.0–6.5 typical. Apply via Studyinfo.fi for most bachelor's; direct to uni for many master's.",
+    "visaWorkRights": "Non-EU: residence permit for studies. EU: register locally. Work: up to 30 hours/week on average during term with valid permit.",
+    "housingNotes": "Student housing (HOAS, TYS, etc.): ~€300–550/month in Helsinki. Apply immediately after admission — queues are long.",
+    "housingPortalUrl": "https://www.studyinfinland.fi/life-finland/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "Mid-January", "note": "Joint application for many bachelor's" },
+      { "intake": "Spring (Jan)", "deadline": "September", "note": "Fewer programmes" }
+    ]
+  },
+  "SE": {
+    "admissionRequirements": "Completed upper secondary. English: IELTS 6.5 or equivalent for English programmes. Apply via universityadmissions.se for bachelor's; direct for many master's.",
+    "visaWorkRights": "Non-EU: residence permit. EU: right of residence if studying. Work: no formal hour cap for students with residence permit, but studies must remain priority.",
+    "housingNotes": "Student corridor rooms: ~SEK 3,500–6,500/month. Stockholm queue can be 1–2 years — join queue early via SSCO member housing.",
+    "housingPortalUrl": "https://studyinsweden.se/life-in-sweden/housing/",
+    "deadlines": [
+      { "intake": "Autumn (Aug/Sep)", "deadline": "Mid-January", "note": "Via universityadmissions.se" },
+      { "intake": "Spring (Jan)", "deadline": "Mid-August", "note": "Limited intake" }
+    ]
+  },
+  "NL": {
+    "admissionRequirements": "Diploma equivalent to Dutch VWO/HBO entry. English: IELTS 6.0–6.5 typical. Numerus fixus programmes have earlier deadlines and may use lottery or selection.",
+    "visaWorkRights": "Non-EU: entry visa + residence permit (uni often sponsors). EU: no visa. Work: up to 16 hours/week during term; full-time in June–August without extra permit.",
+    "housingNotes": "Huge shortage nationally. Student rooms: €400–800/month. Start searching before arrival; university often has waiting lists only.",
+    "housingPortalUrl": "https://www.studyinholland.nl/practical-matters/housing",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "1 May", "note": "Numerus fixus: 15 January" },
+      { "intake": "Spring (Feb)", "deadline": "15 October", "note": "Few programmes" }
+    ]
+  },
+  "PL": {
+    "admissionRequirements": "Maturity certificate / secondary diploma. English programmes: IELTS 5.5–6.5 typical. Some require entrance exams or interviews.",
+    "visaWorkRights": "Non-EU: national visa D + temporary residence for studies. EU: free movement. Work: possible with residence card; check permit conditions.",
+    "housingNotes": "Dorms: ~€80–150/month (very cheap). Private rent in Warsaw/Kraków: €300–500. Dorms fill fast — apply with admission.",
+    "housingPortalUrl": "https://study.gov.pl/study-in-poland/life-in-poland/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Oct)", "deadline": "July–August", "note": "Varies by university" },
+      { "intake": "Spring (Feb)", "deadline": "November–December", "note": "Limited programmes" }
+    ]
+  },
+  "CZ": {
+    "admissionRequirements": "Secondary school leaving certificate. Czech programmes: B2 Czech often required. English programmes: IELTS 6.0 typical. Some faculties require entrance exams.",
+    "visaWorkRights": "Non-EU: long-term visa + residence for studies. EU: notify police within 30 days. Work: notify immigration when taking employment.",
+    "housingNotes": "Dorms: ~€150–250/month. Private in Prague: €400–700. University dorm application usually with admission.",
+    "housingPortalUrl": "https://www.studyinczechia.cz/study/living/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep/Oct)", "deadline": "February–April", "note": "Faculty-specific" },
+      { "intake": "Spring (Feb)", "deadline": "September–November", "note": "Limited" }
+    ]
+  },
+  "AT": {
+    "admissionRequirements": "University entrance qualification (Matura or equivalent). German C1 often required for German programmes; English programmes need IELTS ~6.0–6.5.",
+    "visaWorkRights": "Non-EU: residence permit for students. EU: free movement. Work: limited hours with permit — verify current limits with OeAD.",
+    "housingNotes": "OeAD housing service helps international students. Dorms: ~€300–500/month in Vienna. Start early.",
+    "housingPortalUrl": "https://oead.at/en/to-austria/living-and-working-in-austria/accommodation/",
+    "deadlines": [
+      { "intake": "Winter (Oct)", "deadline": "5 September", "note": "General guideline; varies" },
+      { "intake": "Summer (Mar)", "deadline": "5 February", "note": "Limited programmes" }
+    ]
+  },
+  "IT": {
+    "admissionRequirements": "Secondary diploma (12 years). English master's: IELTS 6.0–6.5. May need pre-enrollment on Universitaly.it for visa. Some programmes require entrance test.",
+    "visaWorkRights": "Non-EU: type D visa + permesso di soggiorno. EU: register locally. Work: part-time allowed with restrictions on study permit.",
+    "housingNotes": "DSU regional housing: €200–400/month subsidised. Private in Milan/Rome: €500–900. Apply to DSU after enrollment.",
+    "housingPortalUrl": "https://www.studyinitaly.esteri.it/en/living-in-italy/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep/Oct)", "deadline": "April–July", "note": "Varies widely by university" },
+      { "intake": "Spring (Feb/Mar)", "deadline": "October–December", "note": "Limited" }
+    ]
+  },
+  "ES": {
+    "admissionRequirements": "Bachillerato or equivalent (homologación may be needed). English programmes: IELTS 6.0–6.5. Selectividad or UNEDasiss for some international applicants.",
+    "visaWorkRights": "Non-EU: student visa (stays over 90 days). EU: register. Work: up to 30 hours/week with authorization after first year in many cases.",
+    "housingNotes": "University residences: €350–650/month. Shared flat in Madrid/Barcelona: €400–700. Residencias have limited spots.",
+    "housingPortalUrl": "https://www.educacionyfp.gob.es/en/estudios/universidad/alojamiento.html",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "June–July", "note": "Regional differences" },
+      { "intake": "Spring (Feb)", "deadline": "December–January", "note": "Limited" }
+    ]
+  },
+  "PT": {
+    "admissionRequirements": "Secondary education certificate. English programmes: IELTS 6.0 typical. National access exam may apply to some bachelor's.",
+    "visaWorkRights": "Non-EU: residence visa for study. EU: free movement. Work: possible with residence permit conditions.",
+    "housingNotes": "University residences: €180–350/month. Lisbon/Porto private: €400–700. SASUL/residence applications via university.",
+    "housingPortalUrl": "https://www.studyinportugal.edu.pt/why-portugal/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep/Oct)", "deadline": "April–July", "note": "Via national candidatura or direct" },
+      { "intake": "Spring (Feb)", "deadline": "October–November", "note": "Limited" }
+    ]
+  },
+  "FR": {
+    "admissionRequirements": "Baccalauréat or equivalent. English programmes: IELTS 6.0–6.5. Bachelor via Parcoursup (French system); international master's often direct. Campus France process for many non-EU applicants.",
+    "visaWorkRights": "Non-EU: VLS-TS étudiant via Campus France. EU: no visa. Work: 964 hours/year (~60% full-time) on student visa.",
+    "housingNotes": "CROUS student housing: ~€150–400/month — apply early via DSE. Private in Paris: €600–900+. CAF housing aid available.",
+    "housingPortalUrl": "https://www.campusfrance.org/en/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "March–April (DAP)", "note": "Parcoursup for French bachelor's" },
+      { "intake": "Autumn master's", "deadline": "February–April", "note": "Varies by école/university" }
+    ]
+  },
+  "IE": {
+    "admissionRequirements": "Leaving Certificate or equivalent. English: IELTS 6.0–6.5 typical (often 6.5 for competitive programmes). CAO for undergraduate.",
+    "visaWorkRights": "Non-EU: IRP (stamp 2) after registration. Work: 20 hours/week during term, 40 hours holidays.",
+    "housingNotes": "Campus accommodation: €600–900/month in Dublin. Severe shortage — start search months before. On-campus not guaranteed.",
+    "housingPortalUrl": "https://www.educationinireland.com/en/student-life/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "1 February (CAO)", "note": "Undergraduate via CAO" },
+      { "intake": "Autumn master's", "deadline": "Rolling – apply early", "note": "Often May–July closing" }
+    ]
+  },
+  "GB": {
+    "admissionRequirements": "A-levels/IB or equivalent. English: IELTS 6.0–7.0 depending on university. UCAS for most undergraduate (Jan deadline for equal consideration).",
+    "visaWorkRights": "Student visa required for most non-UK nationals. Work: 20 hours/week during term for degree-level students on student visa.",
+    "housingNotes": "Halls: £100–250/week. London very expensive. Guaranteed halls often for first-years only — apply when you accept offer.",
+    "housingPortalUrl": "https://www.ukcisa.org.uk/Information--Advice/Living-in-the-UK/Housing",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "31 January (UCAS equal consideration)", "note": "Oxbridge earlier" },
+      { "intake": "Autumn master's", "deadline": "Rolling – often June–August", "note": "Competitive courses earlier" }
+    ]
+  },
+  "DK": {
+    "admissionRequirements": "Upper secondary equivalent. English: IELTS 6.5 typical. Apply via optagelse.dk for bachelor's (quota 1/2 system).",
+    "visaWorkRights": "Non-EU: residence permit. EU: free movement. Work: 20 hours/week Sep–May; full-time June–August.",
+    "housingNotes": "Akademikerbolig/college rooms: DKK 2,500–4,500/month. Copenhagen extremely competitive — join waiting lists early.",
+    "housingPortalUrl": "https://studyindenmark.dk/living-in-denmark/housing",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "15 March (quota 2)", "note": "Quota 1 uses GPA — earlier" },
+      { "intake": "Spring (Feb)", "deadline": "Limited programmes", "note": "Check optagelse.dk" }
+    ]
+  },
+  "BE": {
+    "admissionRequirements": "Secondary diploma. Language: Dutch/French/English depending on community and programme. IELTS 6.0–6.5 for English programmes.",
+    "visaWorkRights": "Non-EU: student visa via university invitation. EU: free movement. Work: allowed with restrictions — check commune rules.",
+    "housingNotes": "Kot/student room: €350–600/month. Brussels/Leuven competitive. University housing offices help.",
+    "housingPortalUrl": "https://www.studyinbelgium.be/en/living-in-belgium/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "May–June", "note": "Flanders vs Wallonia differ" },
+      { "intake": "Spring (Feb)", "deadline": "Limited", "note": "Check institution" }
+    ]
+  },
+  "HU": {
+    "admissionRequirements": "Secondary school certificate. English programmes: IELTS 5.5–6.0 typical. Some require entrance exam or Skype interview.",
+    "visaWorkRights": "Non-EU: residence permit for study. EU: free movement. Work: possible with permit — notify immigration.",
+    "housingNotes": "Dorms: €100–200/month (affordable). Budapest private: €300–500. Apply for dorm with admission letter.",
+    "housingPortalUrl": "https://studyinhungary.hu/coming-to-hungary/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "April–June", "note": "Stipendium Hungaricum: earlier" },
+      { "intake": "Spring (Feb)", "deadline": "November", "note": "Limited" }
+    ]
+  },
+  "EE": {
+    "admissionRequirements": "Secondary education certificate. English: IELTS 5.5–6.5. Apply via DreamApply or directly to university.",
+    "visaWorkRights": "Non-EU: D-visa + temporary residence. EU: free movement. Work: allowed with residence permit conditions.",
+    "housingNotes": "Dorms: €80–150/month. Tallinn private: €300–500. University dorm application after admission.",
+    "housingPortalUrl": "https://www.studyinestonia.ee/living/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "April–May", "note": "Via DreamApply for many" },
+      { "intake": "Spring (Feb)", "deadline": "November", "note": "Limited" }
+    ]
+  },
+  "LT": {
+    "admissionRequirements": "Brandos atestatas or equivalent. English programmes: IELTS 6.0 typical. Apply via LAMA BPO or directly.",
+    "visaWorkRights": "Non-EU: national visa D + temporary residence. EU: free movement. Work: check migration conditions.",
+    "housingNotes": "Dorms: €70–150/month. Vilnius private: €250–450. Cheap compared to Western Europe.",
+    "housingPortalUrl": "https://studyin.lt/living-in-lithuania/accommodation/",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "June–July", "note": "LAMA BPO for bachelor's" },
+      { "intake": "Spring (Feb)", "deadline": "December", "note": "Limited" }
+    ]
+  },
+  "SI": {
+    "admissionRequirements": "Matura or equivalent. Slovenian for most bachelor's; English for selected master's. IELTS 6.0 for English programmes.",
+    "visaWorkRights": "Non-EU: temporary residence for study. EU: free movement. Work: notify authorities when employed.",
+    "housingNotes": "Student dorms: €100–200/month. Ljubljana private: €350–550. Limited dorm capacity.",
+    "housingPortalUrl": "https://www.studyinslovenia.si/study/living-in-slovenia/accommodation/",
+    "deadlines": [
+      { "intake": "Autumn (Oct)", "deadline": "February–August", "note": "Via eVŠ portal" },
+      { "intake": "Spring (Feb)", "deadline": "Limited", "note": "Check eVŠ" }
+    ]
+  },
+  "CH": {
+    "admissionRequirements": "Recognised secondary certificate. Language: German/French/English by programme. IELTS 6.5+ for English programmes. Some require entrance exam.",
+    "visaWorkRights": "Non-EU: national D visa then residence permit. Work: 15 hours/week during term with employer notification; full-time holidays.",
+    "housingNotes": "Very expensive. Student housing: CHF 500–900/month. Start search immediately after admission.",
+    "housingPortalUrl": "https://www.education-switzerland.ch/en/study-in-switzerland/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "December–April", "note": "Canton and university specific" },
+      { "intake": "Spring (Feb)", "deadline": "Varies", "note": "Limited intake" }
+    ]
+  },
+  "RO": {
+    "admissionRequirements": "Baccalaureate or equivalent. English programmes: IELTS 6.0 typical. May require admission exam or file evaluation.",
+    "visaWorkRights": "Non-EU: long-stay visa + residence. EU: free movement. Work: part-time possible with permit.",
+    "housingNotes": "Dorms: €50–150/month. Bucharest private: €250–450. Very affordable housing.",
+    "housingPortalUrl": "https://studyinromania.gov.ro/living-in-romania/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Oct)", "deadline": "July–August", "note": "Via university portal" },
+      { "intake": "Spring (Feb)", "deadline": "December–January", "note": "Limited" }
+    ]
+  },
+  "BG": {
+    "admissionRequirements": "Diploma za sredno obrazovanie or equivalent. English programmes: IELTS 6.0 typical. Certificate recognition may be required.",
+    "visaWorkRights": "Non-EU: type D visa + residence for education. EU: free movement. Work: check permit conditions.",
+    "housingNotes": "Dorms: €30–80/month. Sofia private: €200–400. Among cheapest in EU.",
+    "housingPortalUrl": "https://studyinbulgaria.net/accommodation/",
+    "deadlines": [
+      { "intake": "Autumn (Sep/Oct)", "deadline": "July–September", "note": "Direct to university" },
+      { "intake": "Spring (Feb)", "deadline": "December–January", "note": "Limited" }
+    ]
+  },
+  "HR": {
+    "admissionRequirements": "Matura or equivalent. Croatian for most programmes; English for selected. IELTS 6.0 for English programmes.",
+    "visaWorkRights": "Non-EU: temporary stay for study. EU: free movement. Work: notify police when working.",
+    "housingNotes": "Dorms: €80–150/month. Zagreb private: €300–500. Apply via university housing office.",
+    "housingPortalUrl": "https://studyincroatia.hr/living-in-croatia/accommodation/",
+    "deadlines": [
+      { "intake": "Autumn (Oct)", "deadline": "June–July", "note": "Via Apply system" },
+      { "intake": "Spring (Feb)", "deadline": "Limited", "note": "Check institution" }
+    ]
+  },
+  "SK": {
+    "admissionRequirements": "Maturita or equivalent. Slovak for most bachelor's; English for selected programmes. IELTS 6.0 typical.",
+    "visaWorkRights": "Non-EU: temporary residence for study. EU: free movement. Work: permitted with conditions on residence.",
+    "housingNotes": "Dorms: €80–150/month. Bratislava private: €400–600. Affordable compared to Western EU.",
+    "housingPortalUrl": "https://www.studyinslovakia.sk/life-in-slovakia/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "February–May", "note": "Faculty-specific" },
+      { "intake": "Spring (Feb)", "deadline": "Limited", "note": "Check faculty" }
+    ]
+  },
+  "LV": {
+    "admissionRequirements": "Atestāts or equivalent. English programmes: IELTS 6.0 typical. Apply via Latvian university portals.",
+    "visaWorkRights": "Non-EU: long-term visa + residence permit. EU: free movement. Work: check OCMA rules.",
+    "housingNotes": "Dorms: €70–120/month. Riga private: €250–450.",
+    "housingPortalUrl": "https://www.studyinlatvia.lv/en/study/work-and-live/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "May–July", "note": "Varies by university" },
+      { "intake": "Spring (Feb)", "deadline": "December", "note": "Limited" }
+    ]
+  },
+  "GR": {
+    "admissionRequirements": "Apolytirio or equivalent. Most programmes in Greek; English for selected master's. IELTS 6.0–6.5 for English programmes.",
+    "visaWorkRights": "Non-EU: national visa + residence for studies. EU: free movement. Work: part-time allowed with restrictions.",
+    "housingNotes": "Dorms limited and cheap where available. Athens private: €350–600. ASOEE/HEI housing varies.",
+    "housingPortalUrl": "https://www.studyingreece.edu.gr/living-in-greece/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "July–August", "note": "Via national platform" },
+      { "intake": "Spring (Feb)", "deadline": "Limited", "note": "Check institution" }
+    ]
+  },
+  "IS": {
+    "admissionRequirements": "Stúdentspróf or equivalent. English widely used; IELTS 6.0–6.5 for proof when required.",
+    "visaWorkRights": "Non-EEA: residence permit for studies. EEA: free movement. Work: permitted with residence permit.",
+    "housingNotes": "Expensive. Student housing via Félagsstofnun studenta or university: ISK 80,000–120,000/month. High cost of living.",
+    "housingPortalUrl": "https://study.iceland.is/living-in-iceland/housing",
+    "deadlines": [
+      { "intake": "Autumn (Aug/Sep)", "deadline": "February–April", "note": "Varies by university" },
+      { "intake": "Spring (Jan)", "deadline": "Limited", "note": "Check institution" }
+    ]
+  },
+  "LU": {
+    "admissionRequirements": "Diplôme de fin d'études or equivalent. English/French/German by programme. IELTS 6.5 for English programmes.",
+    "visaWorkRights": "Non-EU: temporary authorisation to stay for studies. EU: free movement. Work: 40 hours/week during holidays; 15 hours/week during term for non-EU.",
+    "housingNotes": "Very expensive. University of Luxembourg assists with CROUS-style listings. Budget €800–1,200/month housing.",
+    "housingPortalUrl": "https://wwwen.uni.lu/students/campus_life/housing",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "April–July", "note": "Programme-specific" },
+      { "intake": "Spring (Feb)", "deadline": "Limited", "note": "Check uni.lu" }
+    ]
+  },
+  "MT": {
+    "admissionRequirements": "Matriculation certificate or equivalent. English programmes: IELTS 6.0 typical. UM and MCAST have different processes.",
+    "visaWorkRights": "Non-EU: student visa/residence. EU: free movement. Work: 20 hours/week during term possible with permit.",
+    "housingNotes": "University residence available but limited. Private: €400–700/month. Apply early for campus housing.",
+    "housingPortalUrl": "https://www.um.edu.mt/international/studentlife/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Oct)", "deadline": "June–July", "note": "University of Malta" },
+      { "intake": "Spring (Feb)", "deadline": "Limited", "note": "Check institution" }
+    ]
+  },
+  "CY": {
+    "admissionRequirements": "Apolytirion or equivalent. English widely used. IELTS 6.0–6.5 typical for formal proof.",
+    "visaWorkRights": "Non-EU: student visa via migration department. EU: free movement. Work: restrictions apply on student permit.",
+    "housingNotes": "University halls available at UCY, CUT, etc. Private: €400–700/month in Nicosia/Limassol.",
+    "housingPortalUrl": "https://www.studyincyprus.org.cy/living-in-cyprus/accommodation",
+    "deadlines": [
+      { "intake": "Autumn (Sep)", "deadline": "July", "note": "Varies by institution" },
+      { "intake": "Spring (Feb)", "deadline": "Limited", "note": "Check institution" }
+    ]
+  }
+}

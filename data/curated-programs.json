@@ -1,0 +1,552 @@
+[
+  {
+    "id": "tum-msc-informatics",
+    "universityId": "tum.de",
+    "name": "M.Sc. Informatics",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "web-dev"],
+    "url": "https://www.cit.tum.de/en/cit/studies/degree-programs/master-informatics/",
+    "description": "Broad CS master's with AI, software engineering, and data modules."
+  },
+  {
+    "id": "tum-msc-rci",
+    "universityId": "tum.de",
+    "name": "M.Sc. Robotics, Cognition, Intelligence",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://www.cit.tum.de/en/cit/studies/degree-programs/master-robotics-cognition-intelligence/",
+    "description": "AI, robotics, and machine learning at one of Europe's top tech schools."
+  },
+  {
+    "id": "tum-msc-dea",
+    "universityId": "tum.de",
+    "name": "M.Sc. Data Engineering and Analytics",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://www.cit.tum.de/en/cit/studies/degree-programs/master-data-engineering-analytics/",
+    "description": "Big data pipelines, analytics, and ML engineering."
+  },
+  {
+    "id": "tu-berlin-msc-cs",
+    "universityId": "tu-berlin.de",
+    "name": "M.Sc. Computer Science (Informatik)",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "web-dev", "ai-data"],
+    "url": "https://www.tu.berlin/en/studying/study-programs/all-programs-offered/study-course/computer-science-informatik-m-sc",
+    "description": "English-track CS master's in Berlin."
+  },
+  {
+    "id": "rwth-msc-cs",
+    "universityId": "rwth-aachen.de",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data"],
+    "url": "https://www.informatik.rwth-aachen.de/cms/Informatik/Studium/Studienangebot/Liste-Aktuelle-Studiengaenge/Studiengangbeschreibung/~egu/M-Sc-Computer-Science/",
+    "description": "Research-focused CS with AI and software specialisations."
+  },
+  {
+    "id": "kit-msc-cs",
+    "universityId": "kit.edu",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data"],
+    "url": "https://www.informatik.kit.edu/english/866.php",
+    "description": "Karlsruhe Institute of Technology — strong AI and systems research."
+  },
+  {
+    "id": "tu-darmstadt-msc-ai",
+    "universityId": "tu-darmstadt.de",
+    "name": "M.Sc. Artificial Intelligence and Machine Learning",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://www.informatik.tu-darmstadt.de/studium/studieninteressierte/studiengaenge_1/master_ai_ml.en.jsp",
+    "description": "Dedicated AI/ML master's in English."
+  },
+  {
+    "id": "tu-dresden-msc-cs",
+    "universityId": "tu-dresden.de",
+    "name": "M.Sc. Computational Modeling and Simulation",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://tu-dresden.de/ing/informatik/studium/studienangebot/master/computational-modeling-and-simulation",
+    "description": "Simulation, HPC, and data-intensive computing."
+  },
+  {
+    "id": "mediadesign-bsc-digital",
+    "universityId": "mediadesign.de",
+    "name": "B.A. Digital Design & Development",
+    "degreeLevel": "bachelor",
+    "language": "de",
+    "fields": ["web-dev", "design-media", "animation-games"],
+    "url": "https://www.mediadesign.de/studium/bachelor/digital-design-development/",
+    "description": "Web, UX, and digital product design with coding."
+  },
+  {
+    "id": "eth-msc-cs",
+    "universityId": "ethz.ch",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data"],
+    "url": "https://inf.ethz.ch/studies/registration/master.html",
+    "description": "Top-ranked CS with AI, systems, and theory tracks."
+  },
+  {
+    "id": "eth-msc-ds",
+    "universityId": "ethz.ch",
+    "name": "M.Sc. Data Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data"],
+    "url": "https://datascience.ethz.ch/education/masters-programme.html",
+    "description": "Interdisciplinary data science and ML."
+  },
+  {
+    "id": "epfl-msc-cs",
+    "universityId": "epfl.ch",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data"],
+    "url": "https://www.epfl.ch/education/master/programs/computer-science/",
+    "description": "IC school — AI, software, and visual computing."
+  },
+  {
+    "id": "epfl-msc-ds",
+    "universityId": "epfl.ch",
+    "name": "M.Sc. Data Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data"],
+    "url": "https://www.epfl.ch/education/master/programs/data-science/",
+    "description": "Applied ML and data analytics."
+  },
+  {
+    "id": "tudelft-msc-cs",
+    "universityId": "tudelft.nl",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "web-dev", "ai-data"],
+    "url": "https://www.tudelft.nl/en/education/programmes/masters/cs/msc-computer-science",
+    "description": "Software, AI, and data science tracks in English."
+  },
+  {
+    "id": "tudelft-msc-ai",
+    "universityId": "tudelft.nl",
+    "name": "M.Sc. Artificial Intelligence Technology",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://www.tudelft.nl/en/education/programmes/masters/ai/msc-artificial-intelligence-technology",
+    "description": "Applied AI engineering programme."
+  },
+  {
+    "id": "tue-msc-cse",
+    "universityId": "tue.nl",
+    "name": "M.Sc. Computer Science and Engineering",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "web-dev", "ai-data"],
+    "url": "https://www.tue.nl/en/education/graduate-programs/computer-science-and-engineering",
+    "description": "Eindhoven — software, AI, and embedded systems."
+  },
+  {
+    "id": "tue-msc-ai",
+    "universityId": "tue.nl",
+    "name": "M.Sc. Artificial Intelligence and Engineering Systems",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://www.tue.nl/en/education/graduate-programs/artificial-intelligence-and-engineering-systems",
+    "description": "AI systems integrated with engineering."
+  },
+  {
+    "id": "kth-msc-ml",
+    "universityId": "kth.se",
+    "name": "M.Sc. Machine Learning",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://www.kth.se/en/studies/master/machine-learning",
+    "description": "Dedicated ML master's in Stockholm."
+  },
+  {
+    "id": "kth-msc-cs",
+    "universityId": "kth.se",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "web-dev"],
+    "url": "https://www.kth.se/en/studies/master/computer-science",
+    "description": "CS with software and systems specialisations."
+  },
+  {
+    "id": "chalmers-msc-cs",
+    "universityId": "chalmers.se",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data"],
+    "url": "https://www.chalmers.se/en/education/find-masters-programme/computer-science-mpcase/",
+    "description": "Algorithms, AI, and software engineering."
+  },
+  {
+    "id": "chalmers-msc-dsai",
+    "universityId": "chalmers.se",
+    "name": "M.Sc. Data Science and AI",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data"],
+    "url": "https://www.chalmers.se/en/education/find-masters-programme/data-science-and-ai-mpds/",
+    "description": "Joint AI and data science programme."
+  },
+  {
+    "id": "aalto-msc-cs",
+    "universityId": "aalto.fi",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "web-dev", "ai-data"],
+    "url": "https://www.aalto.fi/en/study-options/masters-programme-in-computer-science",
+    "description": "Software, HCI, and AI tracks in Helsinki."
+  },
+  {
+    "id": "aalto-msc-ds",
+    "universityId": "aalto.fi",
+    "name": "M.Sc. Data Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data"],
+    "url": "https://www.aalto.fi/en/study-options/masters-programme-in-data-science",
+    "description": "ML, statistics, and big data."
+  },
+  {
+    "id": "dtu-msc-cs",
+    "universityId": "dtu.dk",
+    "name": "M.Sc. Computer Science and Engineering",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "web-dev", "ai-data"],
+    "url": "https://www.dtu.dk/english/education/msc/programmes/computer-science-and-engineering",
+    "description": "Software, AI, and embedded systems in Copenhagen."
+  },
+  {
+    "id": "dtu-msc-ai",
+    "universityId": "dtu.dk",
+    "name": "M.Sc. Artificial Intelligence",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://www.dtu.dk/english/education/msc/programmes/artificial-intelligence",
+    "description": "Dedicated AI master's."
+  },
+  {
+    "id": "tuwien-msc-se",
+    "universityId": "tuwien.ac.at",
+    "name": "M.Sc. Software Engineering & Management",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["web-dev", "it-cs"],
+    "url": "https://informatics.tuwien.ac.at/study/master-software-engineering",
+    "description": "English software engineering in Vienna."
+  },
+  {
+    "id": "tuwien-msc-vc",
+    "universityId": "tuwien.ac.at",
+    "name": "M.Sc. Visual Computing",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["animation-games", "design-media", "it-cs"],
+    "url": "https://informatics.tuwien.ac.at/study/master-visual-computing",
+    "description": "Graphics, VR, and computer vision."
+  },
+  {
+    "id": "tugraz-msc-cs",
+    "universityId": "tugraz.at",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data"],
+    "url": "https://www.tugraz.at/en/studying-and-teaching/masters-and-courses/masters-programmes/computer-science/",
+    "description": "AI, software, and security specialisations."
+  },
+  {
+    "id": "cvut-msc-oi",
+    "universityId": "cvut.cz",
+    "name": "M.Sc. Open Informatics",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "web-dev", "ai-data"],
+    "url": "https://oi.fel.cvut.cz/en/master-programme/",
+    "description": "Flexible CS master's in Prague with AI and software tracks."
+  },
+  {
+    "id": "cvut-msc-ai",
+    "universityId": "cvut.cz",
+    "name": "M.Sc. Artificial Intelligence",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://cybersec.fel.cvut.cz/ai/",
+    "description": "Dedicated AI programme at Czech Technical University."
+  },
+  {
+    "id": "imperial-msc-ai",
+    "universityId": "imperial.ac.uk",
+    "name": "M.Sc. Artificial Intelligence",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://www.imperial.ac.uk/study/courses/postgraduate-taught/2024/artificial-intelligence/",
+    "description": "AI-focused master's at Imperial College London."
+  },
+  {
+    "id": "imperial-msc-computing",
+    "universityId": "imperial.ac.uk",
+    "name": "M.Sc. Computing (AI & ML)",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs", "web-dev"],
+    "url": "https://www.imperial.ac.uk/study/courses/postgraduate-taught/computing/",
+    "description": "Computing with AI, ML, and software specialisations."
+  },
+  {
+    "id": "edinburgh-msc-ai",
+    "universityId": "ed.ac.uk",
+    "name": "M.Sc. Artificial Intelligence",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2024&id=874",
+    "description": "One of the UK's oldest and best-known AI programmes."
+  },
+  {
+    "id": "edinburgh-msc-cs",
+    "universityId": "ed.ac.uk",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "web-dev", "ai-data"],
+    "url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2024&id=875",
+    "description": "Broad CS with AI and software modules."
+  },
+  {
+    "id": "kuleuven-msc-cs",
+    "universityId": "kuleuven.be",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data"],
+    "url": "https://www.kuleuven.be/programmes/master-computer-science",
+    "description": "AI, software, and security in Leuven."
+  },
+  {
+    "id": "polimi-msc-cse",
+    "universityId": "polimi.it",
+    "name": "M.Sc. Computer Science and Engineering",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "web-dev", "ai-data"],
+    "url": "https://www.polimi.it/en/programmes/master-of-science/computer-science-and-engineering",
+    "description": "English-track CS at Politecnico di Milano."
+  },
+  {
+    "id": "polimi-msc-did",
+    "universityId": "polimi.it",
+    "name": "M.Sc. Digital and Interaction Design",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["design-media", "web-dev", "animation-games"],
+    "url": "https://www.polimi.it/en/programmes/master-of-science/digital-and-interaction-design",
+    "description": "UX, interaction design, and digital products."
+  },
+  {
+    "id": "designacademy-ma",
+    "universityId": "designacademy.nl",
+    "name": "MA Design (Information Design / Contextual Design)",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["design-media", "animation-games"],
+    "url": "https://www.designacademy.nl/p/study-at-dae/masters",
+    "description": "World-renowned design school in Eindhoven."
+  },
+  {
+    "id": "reutlingen-msc-ai",
+    "universityId": "reutlingen-university.de",
+    "name": "M.Sc. Applied Artificial Intelligence",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://www.reutlingen-university.de/en/masters/applied-artificial-intelligence",
+    "description": "Applied AI master's taught in English."
+  },
+  {
+    "id": "ugent-msc-cs",
+    "universityId": "ugent.be",
+    "name": "M.Sc. Computer Science Engineering",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data", "web-dev"],
+    "url": "https://www.ugent.be/en/education/master-programmes/computer-science-engineering",
+    "description": "Software, AI, and data engineering in Ghent."
+  },
+  {
+    "id": "btu-msc-cs",
+    "universityId": "b-tu.de",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "web-dev", "ai-data"],
+    "url": "https://www.b-tu.de/en/university/organisational-units/faculty-mathematics-computer-science-physics/computer-science",
+    "description": "English-track CS master's in Cottbus, eastern Germany."
+  },
+  {
+    "id": "btu-bsc-cs",
+    "universityId": "b-tu.de",
+    "name": "B.Sc. Computer Science",
+    "degreeLevel": "bachelor",
+    "language": "de",
+    "fields": ["it-cs", "web-dev"],
+    "url": "https://www.b-tu.de/en/university/organisational-units/faculty-mathematics-computer-science-physics/computer-science",
+    "description": "Foundations in programming, systems, and software engineering."
+  },
+  {
+    "id": "mcast-bsc-ict",
+    "universityId": "mcast.edu.mt",
+    "name": "B.Sc. (Hons) Information and Communication Technology",
+    "degreeLevel": "bachelor",
+    "language": "en",
+    "fields": ["it-cs", "web-dev"],
+    "url": "https://www.mcast.edu.mt/institute-of-information-communication-technology/",
+    "description": "Practical ICT and software development in English, Malta."
+  },
+  {
+    "id": "mcast-bsc-creative-media",
+    "universityId": "mcast.edu.mt",
+    "name": "B.Sc. (Hons) Creative Media Production",
+    "degreeLevel": "bachelor",
+    "language": "en",
+    "fields": ["design-media", "animation-games"],
+    "url": "https://www.mcast.edu.mt/institute-of-the-creative-arts/",
+    "description": "Video, animation, and digital media production."
+  },
+  {
+    "id": "tudelft-msc-cs",
+    "universityId": "tudelft.nl",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data", "web-dev"],
+    "url": "https://www.tudelft.nl/en/education/programmes/masters/cs/msc-computer-science",
+    "description": "Top-ranked CS with AI, systems, and software tracks."
+  },
+  {
+    "id": "uva-msc-ai",
+    "universityId": "uva.nl",
+    "name": "M.Sc. Artificial Intelligence",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["ai-data", "it-cs"],
+    "url": "https://www.uva.nl/en/programmes/masters/artificial-intelligence/artificial-intelligence.html",
+    "description": "Amsterdam AI master's — ML, NLP, and intelligent systems."
+  },
+  {
+    "id": "eth-msc-cs",
+    "universityId": "ethz.ch",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data"],
+    "url": "https://inf.ethz.ch/studies/master.html",
+    "description": "Elite CS programme with strong theory and AI research."
+  },
+  {
+    "id": "epfl-msc-cs",
+    "universityId": "epfl.ch",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data", "web-dev"],
+    "url": "https://www.epfl.ch/education/master/programs/computer-science/",
+    "description": "Lausanne — systems, data, and visual computing."
+  },
+  {
+    "id": "aalto-msc-cs",
+    "universityId": "aalto.fi",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data", "web-dev"],
+    "url": "https://www.aalto.fi/en/study-options/masters-programme-in-computer-communication-and-information-sciences-computer-science",
+    "description": "English CS master's in Helsinki with HCI and ML options."
+  },
+  {
+    "id": "dtu-msc-cs",
+    "universityId": "dtu.dk",
+    "name": "M.Sc. Computer Science and Engineering",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data"],
+    "url": "https://www.dtu.dk/english/education/graduation/msc-programmes/computer-science-and-engineering",
+    "description": "Denmark's leading tech university — software and AI."
+  },
+  {
+    "id": "kth-msc-cs",
+    "universityId": "kth.se",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data", "web-dev"],
+    "url": "https://www.kth.se/en/studies/master/computer-science",
+    "description": "Stockholm CS with distributed systems and ML."
+  },
+  {
+    "id": "sapienza-msc-cs",
+    "universityId": "uniroma1.it",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data"],
+    "url": "https://www.uniroma1.it/en/pagina/master-science-computer-science",
+    "description": "English CS master's at Rome's largest university."
+  },
+  {
+    "id": "ugr-msc-cs",
+    "universityId": "ugr.es",
+    "name": "M.Sc. Computer Engineering",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "web-dev", "ai-data"],
+    "url": "https://masteres.ugr.es/inicio",
+    "description": "Affordable southern Spain option with English tracks."
+  },
+  {
+    "id": "uol-msc-cs",
+    "universityId": "uni-leipzig.de",
+    "name": "M.Sc. Computer Science",
+    "degreeLevel": "master",
+    "language": "en",
+    "fields": ["it-cs", "ai-data"],
+    "url": "https://www.informatik.uni-leipzig.de/en/studies/study-programs/master-computer-science/",
+    "description": "English CS master's in Leipzig — lower living costs."
+  },
+  {
+    "id": "game-academy-bachelor",
+    "universityId": "game-academy.de",
+    "name": "B.A. Game Design",
+    "degreeLevel": "bachelor",
+    "language": "en",
+    "fields": ["animation-games", "design-media"],
+    "url": "https://www.game-academy.de/en/study-programs/ba-game-design/",
+    "description": "Game design and development focused bachelor's."
+  }
+]
