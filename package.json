@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "db:export-json": "tsx scripts/export-db-json.ts",
     "db:sync": "tsx scripts/sync-hei.ts",
     "db:sync-programs": "tsx scripts/sync-programs.ts",
     "db:verify-urls": "tsx scripts/verify-website-urls.ts",

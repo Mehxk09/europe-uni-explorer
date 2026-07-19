@@ -1,9 +1,16 @@
-import { and, asc, count, eq, inArray, like, or } from "drizzle-orm";
-
-import { db } from "@/db";
-import { programs, universities } from "@/db/schema";
 import type { StudyInterestId } from "@/lib/uni-display";
 import { matchesStudyInterest } from "@/lib/uni-display";
+import {
+  allPrograms,
+  allUniversities,
+  getAllProgramsByUniversity,
+  getProgramsForUniversities,
+  getProgramsForUniversity,
+  getTotalProgramCountFromCatalog,
+  getTotalUniversityCountFromCatalog,
+  getUniversityCountsByCountry,
+  getUniversityRowById,
+} from "@/lib/catalog";
 import type { ProgramRecord } from "@/lib/types";
 import curatedCountries from "../../data/curated-countries.json";
 import type {
@@ -65,21 +72,11 @@ export { getCountryStudentInfo };
 export type { CountryStudentInfo, DeadlineEntry };
 
 export async function getCountriesWithStats(): Promise<CountryWithStats[]> {
-  const counts = await db
-    .select({
-      countryCode: universities.countryCode,
-      universityCount: count(),
-    })
-    .from(universities)
-    .groupBy(universities.countryCode);
-
-  const countMap = new Map(
-    counts.map((row) => [row.countryCode, row.universityCount]),
-  );
+  const countMap = getUniversityCountsByCountry();
 
   const allCodes = new Set([
     ...Object.keys(EUROPEAN_COUNTRY_NAMES),
-    ...counts.map((row) => row.countryCode),
+    ...countMap.keys(),
   ]);
 
   return Array.from(allCodes)
@@ -98,16 +95,12 @@ export async function getCountriesWithStats(): Promise<CountryWithStats[]> {
 export async function getCountryByCode(code: string) {
   const upper = code.toUpperCase();
   const curated = getCurated(upper);
-
-  const [stats] = await db
-    .select({ universityCount: count() })
-    .from(universities)
-    .where(eq(universities.countryCode, upper));
+  const countMap = getUniversityCountsByCountry();
 
   return {
     ...curated,
     name: curated.name || EUROPEAN_COUNTRY_NAMES[upper] || upper,
-    universityCount: stats?.universityCount ?? 0,
+    universityCount: countMap.get(upper) ?? 0,
   };
 }
 
@@ -116,30 +109,24 @@ export async function getUniversitiesByCountry(
   search?: string,
 ) {
   const upper = countryCode.toUpperCase();
-  const conditions = [eq(universities.countryCode, upper)];
+  let rows = allUniversities.filter((u) => u.countryCode === upper);
 
   if (search?.trim()) {
-    const term = `%${search.trim()}%`;
-    conditions.push(
-      or(like(universities.name, term), like(universities.city, term))!,
+    const term = search.trim().toLowerCase();
+    rows = rows.filter(
+      (u) =>
+        u.name.toLowerCase().includes(term) ||
+        (u.city?.toLowerCase().includes(term) ?? false),
     );
   }
 
-  return db
-    .select()
-    .from(universities)
-    .where(and(...conditions))
-    .orderBy(asc(universities.name))
-    .then((rows) => rows.map(withResolvedWebsite));
+  return rows
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map(withResolvedWebsite);
 }
 
 export async function getUniversityById(id: string) {
-  const [row] = await db
-    .select()
-    .from(universities)
-    .where(eq(universities.id, id))
-    .limit(1);
-
+  const row = getUniversityRowById(id);
   if (!row) return null;
 
   const curated = getCurated(row.countryCode);
@@ -194,15 +181,33 @@ function englishMatches(level: string, required: boolean) {
   return level === "common" || level === "growing";
 }
 
+function degreeMatches(
+  programsForUni: ProgramRecord[],
+  degree: SearchFilters["degree"],
+): boolean {
+  if (degree === "both") return true;
+  if (programsForUni.length > 0) {
+    return programsForUni.some((p) => p.degreeLevel === degree);
+  }
+  return true;
+}
+
+function studyFieldMatches(
+  universityName: string,
+  programsForUni: ProgramRecord[],
+  field: string | null,
+): boolean {
+  if (!field) return true;
+  const interest = field as StudyInterestId;
+  if (programsForUni.some((p) => p.fields.includes(interest))) return true;
+  return matchesStudyInterest(universityName, interest);
+}
+
 export async function searchUniversities(
   filters: SearchFilters,
 ): Promise<UniversityWithCountry[]> {
-  const [rows, programMap] = await Promise.all([
-    db.select().from(universities).orderBy(asc(universities.name)),
-    loadProgramsByUniversity(),
-  ]);
-
-  let filtered = rows;
+  const programMap = getAllProgramsByUniversity();
+  let filtered = [...allUniversities];
 
   if (filters.countries.length > 0) {
     filtered = filtered.filter((u) => filters.countries.includes(u.countryCode));
@@ -244,20 +249,18 @@ export async function searchUniversities(
     });
   }
 
-  return results;
+  return results.sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export async function getUniversitiesByIds(ids: string[]) {
   if (ids.length === 0) return [];
 
-  const [rows, programMap] = await Promise.all([
-    db.select().from(universities).where(inArray(universities.id, ids)),
-    getProgramsByUniversityIds(ids),
-  ]);
-
+  const programMap = getProgramsForUniversities(ids);
   const order = new Map(ids.map((id, i) => [id, i]));
 
-  return rows
+  return ids
+    .map((id) => getUniversityRowById(id))
+    .filter((row): row is NonNullable<typeof row> => row != null)
     .map((row) => {
       const curated = getCurated(row.countryCode);
       const countryStudentInfo = getCountryStudentInfo(row.countryCode);
@@ -282,111 +285,34 @@ export async function getUniversitiesByIds(ids: string[]) {
 }
 
 export async function getTotalUniversityCount() {
-  const [result] = await db.select({ total: count() }).from(universities);
-  return result?.total ?? 0;
-}
-
-function degreeMatches(
-  programsForUni: ProgramRecord[],
-  degree: SearchFilters["degree"],
-): boolean {
-  if (degree === "both") return true;
-  if (programsForUni.length > 0) {
-    return programsForUni.some((p) => p.degreeLevel === degree);
-  }
-  return true;
-}
-
-function studyFieldMatches(
-  universityName: string,
-  programsForUni: ProgramRecord[],
-  field: string | null,
-): boolean {
-  if (!field) return true;
-  const interest = field as StudyInterestId;
-  if (programsForUni.some((p) => p.fields.includes(interest))) return true;
-  return matchesStudyInterest(universityName, interest);
+  return getTotalUniversityCountFromCatalog();
 }
 
 export async function getProgramsByUniversityIds(
   ids: string[],
 ): Promise<Record<string, ProgramRecord[]>> {
-  if (ids.length === 0) return {};
-
-  const rows = await db
-    .select()
-    .from(programs)
-    .where(inArray(programs.universityId, ids))
-    .orderBy(asc(programs.name));
-
-  const map: Record<string, ProgramRecord[]> = {};
-  for (const row of rows) {
-    const program = mapProgram(row);
-    (map[row.universityId] ??= []).push(program);
-  }
-  return map;
-}
-
-async function loadProgramsByUniversity(): Promise<Record<string, ProgramRecord[]>> {
-  const rows = await db.select().from(programs).orderBy(asc(programs.name));
-  const map: Record<string, ProgramRecord[]> = {};
-  for (const row of rows) {
-    const program = mapProgram(row);
-    (map[row.universityId] ??= []).push(program);
-  }
-  return map;
-}
-
-function parseProgramFields(raw: string): StudyInterestId[] {
-  try {
-    return JSON.parse(raw) as StudyInterestId[];
-  } catch {
-    return [];
-  }
-}
-
-function mapProgram(row: typeof programs.$inferSelect): ProgramRecord {
-  return {
-    id: row.id,
-    universityId: row.universityId,
-    name: row.name,
-    degreeLevel: row.degreeLevel,
-    language: row.language,
-    fields: parseProgramFields(row.fields),
-    url: row.url,
-    description: row.description,
-  };
+  return getProgramsForUniversities(ids);
 }
 
 export async function getProgramsByUniversityId(universityId: string): Promise<ProgramRecord[]> {
-  const rows = await db
-    .select()
-    .from(programs)
-    .where(eq(programs.universityId, universityId))
-    .orderBy(asc(programs.name));
-
-  return rows.map(mapProgram);
+  return getProgramsForUniversity(universityId);
 }
 
 export async function getProgramFieldsByCountry(
   countryCode: string,
 ): Promise<Record<string, StudyInterestId[]>> {
-  const rows = await db
-    .select({
-      universityId: programs.universityId,
-      fields: programs.fields,
-    })
-    .from(programs)
-    .innerJoin(universities, eq(programs.universityId, universities.id))
-    .where(eq(universities.countryCode, countryCode.toUpperCase()));
+  const upper = countryCode.toUpperCase();
+  const uniIds = new Set(
+    allUniversities.filter((u) => u.countryCode === upper).map((u) => u.id),
+  );
 
   const map: Record<string, Set<StudyInterestId>> = {};
 
-  for (const row of rows) {
-    const parsed = parseProgramFields(row.fields);
-    const set = map[row.universityId] ?? new Set<StudyInterestId>();
-    for (const field of parsed) set.add(field);
-    map[row.universityId] = set;
+  for (const program of allPrograms) {
+    if (!uniIds.has(program.universityId)) continue;
+    const set = map[program.universityId] ?? new Set<StudyInterestId>();
+    for (const field of program.fields as StudyInterestId[]) set.add(field);
+    map[program.universityId] = set;
   }
 
   return Object.fromEntries(
@@ -397,22 +323,21 @@ export async function getProgramFieldsByCountry(
 export async function getProgramCountsByCountry(
   countryCode: string,
 ): Promise<Record<string, number>> {
-  const rows = await db
-    .select({
-      universityId: programs.universityId,
-      total: count(),
-    })
-    .from(programs)
-    .innerJoin(universities, eq(programs.universityId, universities.id))
-    .where(eq(universities.countryCode, countryCode.toUpperCase()))
-    .groupBy(programs.universityId);
+  const upper = countryCode.toUpperCase();
+  const uniIds = new Set(
+    allUniversities.filter((u) => u.countryCode === upper).map((u) => u.id),
+  );
 
-  return Object.fromEntries(rows.map((row) => [row.universityId, row.total]));
+  const map: Record<string, number> = {};
+  for (const program of allPrograms) {
+    if (!uniIds.has(program.universityId)) continue;
+    map[program.universityId] = (map[program.universityId] ?? 0) + 1;
+  }
+  return map;
 }
 
 export async function getProgramCount(): Promise<number> {
-  const [result] = await db.select({ total: count() }).from(programs);
-  return result?.total ?? 0;
+  return getTotalProgramCountFromCatalog();
 }
 
 export { getCurated };
